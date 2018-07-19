@@ -13,7 +13,7 @@ The goal, in fact, is to create a versatile system, which has the potential to b
 
 [For further details (ita)](http://amslaurea.unibo.it/14479/1/Utilizzo%20di%20metodi%20di%20configurazione%20automatica%20per%20un%E2%80%99applicazione%20di%20trans-precision%20computing%20su%20piattaforma%20PULP.pdf)
 
-## Dataset
+## Understanding the dataset
 
 The given Dataset has been generated through the follow meaning and structure: 
 
@@ -181,7 +181,7 @@ The same idea has been done for the error values and the different precision's l
 
 Please download the jupyter file in the main repository or alternatively the other formats.
 
-## Requirements : 
+## Requirements & references  : 
 
 * numpy
 * pandas
@@ -191,7 +191,6 @@ Please download the jupyter file in the main repository or alternatively the oth
 * [Python 3](https://www.python.org/download/releases/3.0/)
 * [Jupyter Notebook (Suggested)](http://jupyter.org/)
 
-## References 
 
 
 
