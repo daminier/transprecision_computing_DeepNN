@@ -1,4 +1,4 @@
-# Project work on Intelligent System: Transprecision computing through Deep Neural Network
+# Project work on Intelligent System: Transprecision computing through Deep Neural Network (Python)
 
 ## About
 
@@ -181,12 +181,17 @@ The same idea has been done for the error values and the different precision's l
 
 Please download the jupyter file in the main repository or alternatively the other formats.
 
-## References 
+## Requirements : 
 
-Used libriries: 
 * numpy
 * pandas
-* sklearn
-* keras 
-* tensorflow
+* [sklearn](http://scikit-learn.org/stable/)
+* [keras](https://keras.io/)
+* [tensorflow](https://www.tensorflow.org/)
+* [Python 3](https://www.python.org/download/releases/3.0/)
+* [Jupyter Notebook (Suggested)](http://jupyter.org/)
+
+## References 
+
+
 
