@@ -6,6 +6,12 @@ Not only aims this project to use a deep neural network for predicting a discret
 
 ### What is Transprecision computing?
 
+Transprecision Computing aims to abandon the abstraction of "guaranteed numerical precision" and replace it with one
+more flexible and efficient. Indeed, the Transprecision Computing, in addition to the already known numerical approximation search, includes a study of mathematical theory and underlying physical principles of the computational approach, as well as the design of algorithms, customized software circuits and tools for the construction of a complex system capable of being used in different applications.
+The goal, in fact, is to create a versatile system, which has the potential to be exploited in a wide variety of real problems, even not limited by computing power, that can benefit from the approximation and accuracy of the method itself. The Transprecision Computing, collects know-how related to different branches of knowledge, from programming to material sciences, in order to obtain a system that is not only approximate, but also flexible, robust and able to learn.
+
+[For further details (ita)](http://amslaurea.unibo.it/14479/1/Utilizzo%20di%20metodi%20di%20configurazione%20automatica%20per%20un%E2%80%99applicazione%20di%20trans-precision%20computing%20su%20piattaforma%20PULP.pdf)
+
 ## Dataset
 
 The given Dataset has been generated through the follow meaning and structure: 
