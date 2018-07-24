@@ -15,7 +15,7 @@ The goal, in fact, is to create a versatile system, which has the potential to b
 
 ## Understanding the dataset
 
-The given Dataset has been generated through the follow meaning and structure: 
+The given Dataset has been generated with the follow meaning and structure: 
 
 
 
@@ -172,10 +172,13 @@ The given Dataset has been generated through the follow meaning and structure:
 <p>5 rows × 134 columns</p>
 </div>
 
-All the data has to be seen as a discrete distribution reppresenting a probability, however, in order to have a more compact dataset the input (in0 and in1) is represented as the index of the bin that has to be set as 1. The reason why we can do that is because is an exact discrete distribution: we are sure about the input, so the probability is 1. 
-This is useful because we can easly hot-one encode the input.
-On the contrary, the y_i values are not exact, therefore every bins is a value from 0 to 1 (needed to be normalized) and the sum of all the (choosen sample) bins must be 1. 
-The same idea has been done for the error values and the different precision's levels can be chosen: float16,float32 or float64. Furthemore, it is also possible to choose the number of bins we desire (65 by default). 
+All the data has to be seen as a discrete distribution where each bin-th reppresents the probability that the number we are considering for the operation (sum,difference,moltiplication,...) is in the range defined by the bin-th. The lenght of the different ranges (bins) are logarithmic. Basically, it has to be seen as the follow image:
+[](/image/example.png) 
+
+However, in order to have a more compact dataset, the input (in0 and in1) is an integer representing the index of the bin that has to be set as 1. The reason why we can set the bin as 1 is because it is an exact discrete distribution: we are sure about the input, so the probability is 1. This is useful because we can easly hot-one encode the input.
+On the contrary, the y_i values are not exact, therefore every bins is a value from 0 to 1 (needed to be normalized) and the sum of all the (y_i-th) bins must be 1. The same idea has been done for the error values. 
+Different precision's levels can be chosen: float16,float32 or float64. 
+(Furthemore, it is also possible to choose the number of bins we desire (65 by default).)
 
 ## Example
 
@@ -190,7 +193,5 @@ Please download the jupyter file in the main repository or alternatively the oth
 * [tensorflow](https://www.tensorflow.org/)
 * [Python 3](https://www.python.org/download/releases/3.0/)
 * [Jupyter Notebook (Suggested)](http://jupyter.org/)
-
-
 
 
