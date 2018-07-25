@@ -3,7 +3,7 @@
 ## About
 
 This activity is based on transprecision computing problem and it points to use a deep neural network in order to learn how to approximate a calculation. 
-Not only aims this project to use a deep neural network for predicting a discrete distribution, but it also compares different approaches of deep neural network: CNN and Fully Connected.
+Not only does this project aim to use a deep neural network for predicting a discrete distribution, but it also compares different approaches of deep neural network: DNN,CNN and Fully Connected.
 
 ### What is Transprecision computing?
 
