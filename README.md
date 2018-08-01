@@ -182,15 +182,17 @@ Furthemore, it is also possible to choose the number of bins we desire (65 by de
 number of iterations of random data generation. 
 The iterations consists in filling each bin in the discretization with "random-samples-bin" values, picked uniformly at random within the bin intervals for all but the left-most and right-most bins (since one of their boundaries is not finite). Samples for these bins are obtained by replaing the infinite with finite ones
 
-## Code
-Please download the jupyter file in the main repository or alternatively the other formats.
 
 ## Fully Connected 
+Download [here](/) the jupyter file.
+
 ### Architecture 
 ![fully connected](/image/fc.png) 
 
 
 ## CNN
+Download [here](/) the jupyter file.
+
 ### Architecture 
 ![CNN](/image/cnn.png) 
 
