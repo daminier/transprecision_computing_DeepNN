@@ -183,9 +183,10 @@ number of iterations of random data generation.
 The iterations consists in filling each bin in the discretization with "random-samples-bin" values, picked uniformly at random within the bin intervals for all but the left-most and right-most bins (since one of their boundaries is not finite). Samples for these bins are obtained by replaing the infinite with finite ones.
 
 
+
 ## Fully Connected 
 
-In this case, it has been used: the sum as the opertion we consider, float32 precision's level and iteration=2 (at data-generation time). 
+In this case, it has been used: the sum, float32 precision's level and iteration=2 (at data-generation time). 
 As you can seen in the Architecture section, the input shape is (,130,1). 
 
 Download [here](/) the jupyter file.
@@ -195,6 +196,10 @@ Download [here](/) the jupyter file.
 
 
 ## CNN
+
+In this case, it has been used: the sum, float32 precision's level and iteration=2 (at data-generation time). 
+As you can seen in the Architecture section, the input shape is (,130,1). 
+
 Download [here](/) the jupyter file.
 
 ### Architecture 
