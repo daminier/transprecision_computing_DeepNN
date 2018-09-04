@@ -223,8 +223,15 @@ Download [here](/transprecison/transpe_DeCNN.ipynb) the jupyter file.
 
 ## Results and comparison between the architectures 
 
-![DeCNN](/image/result1.png) 
-![DeCNN](/image/result2.png) 
+
+<p align="center">
+<img src="/image/result1.png" width="470" height="470" />
+</p>
+
+<p align="center">
+<img src="/image/result2.png" width="370" height="370" />
+</p>
+
 
 As we can see the results are very good in all the architectures, however, some consideration has to be made:
 * The fully connected Network works perfectly and is way faster than the others.
