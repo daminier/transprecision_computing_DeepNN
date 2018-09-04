@@ -3,7 +3,7 @@
 ## About
 
 This activity is based on transprecision computing problem and it points to use a deep neural network in order to learn how to approximate a calculation. 
-Not only does this project aim to use a deep neural network for predicting a discrete distribution, but it also compares different approaches of deep neural network: DNN,CNN and Fully Connected.
+Not only does this project aim to use a deep neural network for predicting a discrete distribution, but it also compares different approaches of deep neural network: DeCNN (Deconvolutional),CNN and Fully Connected.
 
 ### What is Transprecision computing?
 
@@ -186,26 +186,46 @@ The iterations consists in filling each bin in the discretization with "random-s
 
 ## Fully Connected 
 
-In this case, it has been used: the sum, float32 precision's level and iteration=2 (at data-generation time). 
+In this case, it has been used: the sum, float32 precision's level and iteration=3 (at data-generation time). 
 As you can seen in the Architecture section, the input shape is (,130,1). 
 
-Download [here](/) the jupyter file.
+Download [here](/transprecison/transpe_FC.ipynb) the jupyter file.
 
 ### Architecture 
-![fully connected](/image/fc.png) 
+![fully connected](/image/fc1.png) 
 
 
 ## CNN
 
-In this case, it has been used: the sum, float32 precision's level and iteration=2 (at data-generation time). 
+In this case, it has been used: the sum, float32 precision's level and iteration=3 (at data-generation time). 
 As you can seen in the Architecture section, the input shape is (,130,1). 
 
-Download [here](/) the jupyter file.
+Download [here](/transprecison/transpe_CNN.ipynb) the jupyter file.
 
 ### Architecture 
 ![CNN](/image/cnn.png) 
 
+
+## DeCNN
+
+A deconvolutional neural network is a neural network that performs an inverse convolution model. Basically, we are “running a CNN backward” but the actual mechanics of deconvolutional neural networks are much more sophisticated than that. We are adding patterns to our data, it is slightly similar to unpooling.
+
+Download [here](/transprecison/transpe_DeCNN.ipynb) the jupyter file.
+
+### Architecture 
+![DeCNN](/image/decnn.png) 
+
+
 ## Results and comparison between the architectures 
+
+![DeCNN](/image/result1.png) 
+![DeCNN](/image/result2.png) 
+
+As we can see the results are very good in all the architectures, however, some consideration has to be made:
+* The fully connected Network works perfectly and is way faster than the others.
+* The Deconvolutional Network is definitely slower compared to the FC, however, according to what we expected, it takes less epochs to get the desired categorical accuracy; so we could run less epochs and get the same results.
+* The Convolutional Network is the worst of them, it takes longer, due to the convolutional operations and the more layers. Furthermore, the trend of the categorical accuracy over epochs does not allow us to save training time.
+
 
 ## Requirements & references  : 
 
@@ -216,5 +236,6 @@ Download [here](/) the jupyter file.
 * [tensorflow](https://www.tensorflow.org/)
 * [Python 3](https://www.python.org/download/releases/3.0/)
 * [Jupyter Notebook (Suggested)](http://jupyter.org/)
+* [Randomness in Deconvolutional Networks for Visual Representation](https://arxiv.org/pdf/1704.00330.pdf)
 
 
