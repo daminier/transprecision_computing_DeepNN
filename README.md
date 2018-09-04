@@ -223,13 +223,18 @@ Download [here](/transprecison/transpe_DeCNN.ipynb) the jupyter file.
 
 ## Results and comparison between the architectures 
 
+As we can see the results are very good in all the architectures, however, some consideration has to be made:
+* The fully connected Network works perfectly and is way faster than the others.
+* The Deconvolutional Network is definitely slower compared to the FC, however, according to what we expected, it takes less epochs to get the desired categorical accuracy; so we could run less epochs and get the same results.
+* The Convolutional Network is the worst of them, it takes longer, due to the convolutional operations and the more layers. Furthermore, the trend of the categorical accuracy over epochs does not allow us to save training time.
+
 
 <p align="center">
-<img src="/image/result1.png" width="470" height="470" />
+<img src="/image/result1.png" width="570" height="470" />
 </p>
 
 <p align="center">
-<img src="/image/result2.png" width="370" height="370" />
+<img src="/image/result2.png" width="400" height="400" />
 </p>
 
 
