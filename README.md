@@ -192,7 +192,9 @@ As you can seen in the Architecture section, the input shape is (,130,1).
 Download [here](/transprecison/transpe_FC.ipynb) the jupyter file.
 
 ### Architecture 
-![fully connected](/image/fc1.png) 
+<p align="center">
+<img src="/image/fc1.png" width="220" height="440" />
+</p>
 
 
 ## CNN
@@ -203,7 +205,9 @@ As you can seen in the Architecture section, the input shape is (,130,1).
 Download [here](/transprecison/transpe_CNN.ipynb) the jupyter file.
 
 ### Architecture 
-![CNN](/image/cnn.png) 
+<p align="center">
+<img src="/image/cnn.png" width="220" height="540" />
+</p>
 
 
 ## DeCNN
@@ -213,8 +217,9 @@ A deconvolutional neural network is a neural network that performs an inverse co
 Download [here](/transprecison/transpe_DeCNN.ipynb) the jupyter file.
 
 ### Architecture 
-![DeCNN](/image/decnn.png) 
-
+<p align="center">
+<img src="/image/decnn.png" width="220" height="440" />
+</p>
 
 ## Results and comparison between the architectures 
 
